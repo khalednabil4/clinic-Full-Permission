@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "2defe4fd-1b8c-4b1a-af8d-4fa943da9ea6",
+		"name": "Clinic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13245301"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "khaled",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "khaled",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/Auth/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"Auth",
+						"token",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/Auth/token/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "khaled",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "khaled",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Auth/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Auth",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 08 Dec 2024 10:29:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer realm=\"api\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Unauthorized access\"\n}"
+				},
+				{
+					"name": "http://127.0.0.1:8000/Auth/token/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "turpo",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Khaled789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Auth/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Auth",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 08 Dec 2024 10:56:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "544"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMzc0MTgwOSwiaWF0IjoxNzMzNjU1NDA5LCJqdGkiOiIxY2E4OTg2ZmVhODU0MzI5ODdiNDg3OWQzNzY1NGU3YSIsInVzZXJfaWQiOjJ9.1IjG3EJ_HHn1eMQZTZqFqAuPOGGUbbJxjxlzhYm6ubU\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0MjYwMjA5LCJpYXQiOjE3MzM2NTU0MDksImp0aSI6IjYwY2RhYTMyMTM5NjRmYjA5NjYxOTA2NzMxODFhMjExIiwidXNlcl9pZCI6Mn0.rq3qpIfve6YVpiKDEKjYsQTFWPO25NEvFkwReTGASVo\",\n    \"username\": \"turpo\",\n    \"Permission\": [\n        \"AddAdmin\",\n        \"administrator\"\n    ]\n}"
+				},
+				{
+					"name": "http://127.0.0.1:8000/Auth/token/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "turpo",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Khaled789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/Auth/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"Auth",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 08 Dec 2024 10:57:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1484"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczMzc0MTg3NSwiaWF0IjoxNzMzNjU1NDc1LCJqdGkiOiJiYmRkMzVhOWNhMGI0NzBlOGMzYzc0M2I5YjVmMDQxOSIsInVzZXJfaWQiOjJ9.Lf13-b5Oli4Ab-8ahI6GTcVoGXspIa63ka_n-WpALkU\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0MjYwMjc1LCJpYXQiOjE3MzM2NTU0NzUsImp0aSI6IjNlNDVmNmU3NjY1NTQyYmU4N2Q4MmJjZDVjMmRkMmExIiwidXNlcl9pZCI6Mn0.SJeLHaxQJma-UhpM7hEUaM0U3wcRJ9CD5-Xpbd2OZpc\",\n    \"username\": \"turpo\",\n    \"Permission\": [\n        \"AddAdmin\",\n        \"add_administrator\",\n        \"change_administrator\",\n        \"delete_administrator\",\n        \"view_administrator\",\n        \"add_doctorspecialization\",\n        \"change_doctorspecialization\",\n        \"delete_doctorspecialization\",\n        \"view_doctorspecialization\",\n        \"add_grouppermission\",\n        \"change_grouppermission\",\n        \"delete_grouppermission\",\n        \"view_grouppermission\",\n        \"add_organization\",\n        \"change_organization\",\n        \"delete_organization\",\n        \"view_organization\",\n        \"add_patient\",\n        \"change_patient\",\n        \"delete_patient\",\n        \"view_patient\",\n        \"add_logentry\",\n        \"change_logentry\",\n        \"delete_logentry\",\n        \"view_logentry\",\n        \"add_group\",\n        \"change_group\",\n        \"delete_group\",\n        \"view_group\",\n        \"add_permission\",\n        \"change_permission\",\n        \"delete_permission\",\n        \"view_permission\",\n        \"add_user\",\n        \"change_user\",\n        \"delete_user\",\n        \"view_user\",\n        \"add_contenttype\",\n        \"change_contenttype\",\n        \"delete_contenttype\",\n        \"view_contenttype\",\n        \"add_resetpasswordtoken\",\n        \"change_resetpasswordtoken\",\n        \"delete_resetpasswordtoken\",\n        \"view_resetpasswordtoken\",\n        \"add_session\",\n        \"change_session\",\n        \"delete_session\",\n        \"view_session\",\n        \"administrator\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Admin new system",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0MjY0MDA1LCJpYXQiOjE3MzM2NTkyMDUsImp0aSI6ImFkYzlmNmE3MTIwNjQ3Yjc4NDk1ODExNzBlMTdjMDY4IiwidXNlcl9pZCI6Mn0.qNdbKMW9nYQOvn4Vff4xqyRivXpr_H8WRMEAmAXZ_Ms",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/Auth/Administratornew/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"Auth",
+						"Administratornew",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Admin old system",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0MjY0MDA1LCJpYXQiOjE3MzM2NTkyMDUsImp0aSI6ImFkYzlmNmE3MTIwNjQ3Yjc4NDk1ODExNzBlMTdjMDY4IiwidXNlcl9pZCI6Mn0.qNdbKMW9nYQOvn4Vff4xqyRivXpr_H8WRMEAmAXZ_Ms",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/Auth/Administratornew/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"Auth",
+						"Administratornew",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
